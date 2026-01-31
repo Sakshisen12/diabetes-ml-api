@@ -37,7 +37,6 @@ POST /diabetes_prediction
 
 📤 Sample Response
 {
-  "prediction": 1,
   "result": "Diabetic"
 }
 
@@ -45,9 +44,9 @@ POST /diabetes_prediction
 or
 
 {
-  "prediction": 0,
   "result": "Not Diabetic"
 }
+
 🧪 How to Test
 
 Open /docs for interactive Swagger UI
