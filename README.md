@@ -1,18 +1,27 @@
-# Diabetes Prediction ML API 🩺
+🩺 Diabetes Prediction ML API
 
-A machine learning based REST API to predict whether a person is diabetic.
+A machine learning–based REST API that predicts whether a person is diabetic using medical parameters.
+The model is deployed as a public FastAPI service.
 
-## Tech Stack
-- Python
-- FastAPI
-- Scikit-learn
-- NumPy
+🚀 Tech Stack
+Python
+FastAPI
+Scikit-learn
+NumPy
+Uvicorn
+Render (Deployment)
 
-## API Endpoint
-POST /predict
+🔗 Live API
+https://diabetes-ml-api-7q1a.onrender.com
 
-## Sample Request
-```json
+
+Swagger Docs:
+/docs
+
+📌 API Endpoint
+POST /diabetes_prediction
+
+📥 Sample Request
 {
   "Pregnancies": 6,
   "Glucose": 148,
@@ -23,7 +32,21 @@ POST /predict
   "DiabetesPedigreeFunction": 0.627,
   "Age": 50
 }
-Response
+
+📤 Sample Response
 {
-  "prediction": "Diabetic"
+  "result": "Diabetic"
 }
+or
+
+{
+  "result": "Not Diabetic"
+}
+
+🧪 How to Test
+Open /docs for interactive Swagger UI
+Or send a POST request using Postman / Python requests
+
+📌 Notes
+This API uses a trained ML model (.sav) for inference
+Designed for learning and demonstration purposes
