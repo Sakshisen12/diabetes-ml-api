@@ -16,9 +16,11 @@ https://diabetes-ml-api-7q1a.onrender.com
 
 
 Swagger Docs:
+
 /docs
 
 📌 API Endpoint
+
 POST /diabetes_prediction
 
 📥 Sample Request
@@ -38,16 +40,24 @@ POST /diabetes_prediction
   "prediction": 1,
   "result": "Diabetic"
 }
+
+
 or
+
 {
   "prediction": 0,
   "result": "Not Diabetic"
 }
-
 🧪 How to Test
+
 Open /docs for interactive Swagger UI
+
 Or send a POST request using Postman / Python requests
 
 📌 Notes
+
 This API uses a trained ML model (.sav) for inference
+
 Designed for learning and demonstration purposes
+
+
